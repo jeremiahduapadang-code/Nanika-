@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 AJA — LALALEELOO (Looney Edition)</title>
+    <!-- Font Kartun Retro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            BER 2<span>!</span>
+        </div>
+        <div class="nav-right">
+            ★ EVEREST 2026 ★
+        </div>
+    </nav>
+
+    <section class="hero">
+        <!-- Efek Lingkaran Target Khas Intro Looney Tunes -->
+        <div class="looney-rings">
+            <div class="ring r1"></div>
+            <div class="ring r2"></div>
+            <div class="ring r3"></div>
+            <div class="ring r4"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-label">
+                ★ HALO WKWKWKWK ★
+            </div>
+
+            <h1>
+                2 AJA<br>
+                BIAR <span>SERU!</span>
+            </h1>
+
+            <p class="hero-description">
+                2 ORANG PUNYA AMBISI, CERITA, PENGALAMAN ML YANG BEDA.
+                <br><br>
+                <strong>Gak Kenal Maka Tak Sayang, jadi kenalin dulu!</strong>
+            </p>
+        </div>
+    </section>
+
+    <section class="profiles" id="profiles">
+        <div class="section-top">
+            <h2>
+                KENALIN <span>AMA KITA DULU!</span>
+            </h2>
+            <p class="subtitle">(Klik kartunya biar kebuka, bro!)</p>
+        </div>
+
+        <div class="card-container">
+
+            <article class="profile-card card-red"
+                tabindex="0"
+                role="button"
+                aria-expanded="false"
+                onclick="toggleCard(this)">
+
+                <div class="card-label">
+                    <span class="nickname">Nanika✿</span>
+                    <span class="card-number">#32</span>
+                </div>
+
+                <div class="photo-frame">
+                    <img src="WhatsApp Image 2026-11-22 at 10.04.04 PM.jpeg" alt="Timothy">
+                    <div class="photo-overlay"></div>
+                </div>
+
+                <div class="card-content">
+                    <h3>Samudra Alfath S</h3>
+                    <p class="hobby">ML (Hirara)
+                     • MUSIK • BACA BUKU</p>
+                    <p class="quote">
+                        "Dont be something thta you aren't."
+                    </p>
+
+                    <div class="extra-info">
+                        <p>
+                            <strong>✦ Tentang ku!</strong><br>
+                            aku anak dari 4 bersaudara yang namanya diambil dari novel Saga dari Samudra dan diakhiri nama dari cendikiawan asal Iran yaitu Ali Syari'ati. Saya adalah jungler terbaik di stero.
+                        </p>
+                    
+                        <p>
+                            <strong>✦ Pengen jadi apa</strong><br>
+                            S1 HUKUM INTERNASIONAL UGM:DIPLOMAT - MASA PENSIUN JADI PENULIS NOVEL
+                        </p>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span class="ig-tag">IG: @sa.mudra1_</span>
+                        <span class="open-btn">BUKA ↗</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="profile-card card-blue"
+                tabindex="0"
+                role="button"
+                aria-expanded="false"
+                onclick="toggleCard(this)">
+
+                <div class="card-label">
+                    <span class="nickname">Fil Kenshō</span>
+                    <span class="card-number">#15</span>
+                </div>
+
+                <div class="photo-frame">
+                    <img src="begitu aja.jpg" alt="Alex">
+                    <div class="photo-overlay"></div>
+                </div>
+
+                <div class="card-content">
+                    <h3>Filio Felix Florentino R</h3>
+                    <p class="hobby">GAMING:ML (Odette)</p>
+                    <p class="quote">
+                        "it doesn't matter how slowly you go, as long as you dont stop."
+                    </p>
+
+                    <div class="extra-info">
+                        <p>
+                            <strong>✦ Tentang Ku!</strong><br>
+                            Aku termasuk anak pertama dari keluarga ku, aku suka meluangkan waktu dengan jalan-jalan (biasanya ke mall), aku orangnya agak introvert, dan aku juga selalu menjaga kerapihan serta kebersihan di sekitar ku.
+                        </p>
+            
+                        <p>
+                            <strong>✦ Pengen Jadi Apa</strong><br>
+                            "S1 PARIWISATA UNY/UPY:TOUR GUIDE"
+                        </p>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span class="ig-tag">IG: @starlix0_</span>
+                        <span class="open-btn">BUKA ↗</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="closing">
+        <div class="closing-circle">
+            <p class="thanks">✦ SEKIAN TERIMAKASIH ✦</p>
+            <h2>
+                GAGEDI<br>
+                GAGEDU GUUU
+            </h2>
+            <p class="thats-all">That's All, Folks!</p>
+        </div>
+    </section>
+
+    <footer>
+        <span>Buat Berdua Aja</span>
+        <span>Dipikir ama otak dibuat ama mesin</span>
+    </footer>
+
+    <script>
+        function toggleCard(card) {
+            const isActive = card.classList.contains("active");
+            const btn = card.querySelector(".open-btn");
+
+            card.classList.toggle("active");
+            card.setAttribute("aria-expanded", !isActive);
+
+            if (!isActive) {
+                btn.textContent = "TUTUP ✕";
+            } else {
+                btn.textContent = "BUKA ↗";
+            }
+        }
+
+        // KEYBOARD INTERACTION
+        document.querySelectorAll(".profile-card").forEach(card => {
+            card.addEventListener("keydown", function(event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    toggleCard(this);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
